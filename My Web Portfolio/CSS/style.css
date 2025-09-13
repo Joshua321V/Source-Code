@@ -1,0 +1,28 @@
+body {
+    font-family: 'Fira Code', monospace;
+    background: linear-gradient(135deg, #111827 0%, #1e293b 100%);
+    min-height: 100vh;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 4px;
+    height: 1.2em;
+    background-color: #5eead4;
+    animation: blink 0.7s step-end infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.skill-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    background-color: #1e293b;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

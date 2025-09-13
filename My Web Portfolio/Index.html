@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio | Joshua R.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="py-8 px-4 md:px-16">
+        <nav class="flex justify-between items-center">
+            <div class="text-2xl font-bold text-[#4fd1c5]">&lt;My Portfolio&gt;</div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#" class="hover:text-[#4fd1c5] transition">Home</a></li>
+                <li><a href="#skills" class="hover:text-[#4fd1c5] transition">Skills</a></li>
+                <li><a href="#projects" class="hover:text-[#4fd1c5] transition">Projects</a></li>
+                <li><a href="#contact" class="hover:text-[#4fd1c5] transition">Contact</a></li>
+            </ul>
+            <button class="md:hidden">Menu</button>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-4 md:px-16">
+        <!-- Hero Section with Typing Effect -->
+        <section class="py-16 md:py-24 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-3xl md:text-5xl font-bold mb-6">
+                    Hi, I'm <span class="text-[#4fd1c5]">Joshua V. Reburiano</span>
+                </h1>
+                <div class="text-xl md:text-2xl mb-8 h-12 md:h-16">
+                    <span id="typing-text"></span><span class="typing-cursor"></span>
+                </div>
+                <p class="text-gray-400 mb-8">
+                    Passionate about creating beautiful, functional web experiences while constantly expanding my knowledge.
+                </p>
+                <div class="flex space-x-4">
+                    <button class="bg-[#4fd1c5] hover:bg-[#38b2ac] text-gray-900 font-bold py-3 px-6 rounded transition">
+                        View Projects
+                    </button>
+                    <button class="border border-[#4fd1c5] text-[#4fd1c5] hover:bg-[#4fd1c510] font-bold py-3 px-6 rounded transition">
+                        Contact Me
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="image/formal atire picture.jpg" alt="Portrait of a web developer working at a modern desk with dual monitors" class="rounded-full border-4 border-[#4fd1c5] w-64 h-64 md:w-80 md:h-80 object-cover">
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16">
+            <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center">My <span class="text-[#4fd1c5]">Development</span> Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Skill Cards -->
+                <div class="skill-card bg-gray-800 p-6 rounded-lg transition duration-300">
+                    <div class="text-4xl text-[#4fd1c5] mb-4">
+                        <img src="https://placehold.co/60x60" alt="HTML5 logo" class="w-12 h-12">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">HTML5</h3>
+                    <p class="text-gray-400">Semantic markup and modern structure</p>
+                </div>
+
+                <div class="skill-card bg-gray-800 p-6 rounded-lg transition duration-300">
+                    <div class="text-4xl text-[#4fd1c5] mb-4">
+                        <img src="https://placehold.co/60x60" alt="CSS3 logo" class="w-12 h-12">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">CSS3</h3>
+                    <p class="text-gray-400">Styling, animations & responsive design</p>
+                </div>
+
+                <div class="skill-card bg-gray-800 p-6 rounded-lg transition duration-300">
+                    <div class="text-4xl text-[#4fd1c5] mb-4">
+                        <img src="https://placehold.co/60x60" alt="JavaScript logo" class="w-12 h-12">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
+                    <p class="text-gray-400">Interactive web experiences</p>
+                </div>
+
+                <div class="skill-card bg-gray-800 p-6 rounded-lg transition duration-300">
+                    <div class="text-4xl text-[#4fd1c5] mb-4">
+                        <img src="https://placehold.co/60x60" alt="React logo" class="w-12 h-12">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">React</h3>
+                    <p class="text-gray-400">Component-based architecture</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Section with Typing Effect -->
+        <section class="py-16 bg-gray-800 rounded-xl px-8 mb-16">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6">Willing to <span class="text-[#4fd1c5]">Learn</span></h2>
+                <div class="text-xl md:text-2xl mb-8 h-12 md:h-16">
+                    <span id="learning-text"></span><span class="typing-cursor"></span>
+                </div>
+                <p class="text-gray-400 mb-8">
+                    I'm committed to continuous learning and improving my typing speed for faster development workflows.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-[#4fd1c510] text-[#4fd1c5] px-4 py-2 rounded-full">TypeScript</span>
+                    <span class="bg-[#4fd1c510] text-[#4fd1c5] px-4 py-2 rounded-full">Node.js</span>
+                    <span class="bg-[#4fd1c510] text-[#4fd1c5] px-4 py-2 rounded-full">GraphQL</span>
+                    <span class="bg-[#4fd1c510] text-[#4fd1c5] px-4 py-2 rounded-full">100 WPM</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="py-8 px-4 md:px-16 bg-gray-900">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <div class="text-xl font-bold text-[#4fd1c5] mb-2">&lt;DevFolio/&gt;</div>
+                <p class="text-gray-400">Web Developer | Lifelong Learner</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-[#4fd1c5] transition">
+                    <img src="https://placehold.co/24x24" alt="GitHub profile" class="w-6 h-6">
+                </a>
+                <a href="#" class="text-gray-400 hover:text-[#4fd1c5] transition">
+                    <img src="https://placehold.co/24x24" alt="LinkedIn profile" class="w-6 h-6">
+                </a>
+                <a href="#" class="text-gray-400 hover:text-[#4fd1c5] transition">
+                    <img src="https://placehold.co/24x24" alt="Twitter profile" class="w-6 h-6">
+                </a>
+                <a href="#" class="text-gray-400 hover:text-[#4fd1c5] transition">
+                    <img src="https://placehold.co/24x24" alt="Email contact" class="w-6 h-6">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Typing Effect for Hero Section
+        const strings = [
+            "Web Developer",
+            "UI Designer",
+            "JavaScript Expert",
+            "React Specialist"
+        ];
+        const typingText = document.getElementById('typing-text');
+        const learningText = document.getElementById('learning-text');
+        let strIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentString = strings[strIndex];
+            
+            if (isDeleting) {
+                typingText.textContent = currentString.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingText.textContent = currentString.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentString.length) {
+                setTimeout(() => isDeleting = true, 1500);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                strIndex = (strIndex + 1) % strings.length;
+                setTimeout(type, 500);
+                return;
+            }
+
+            setTimeout(type, isDeleting ? 50 : 100);
+        }
+
+        // Learning Typing Effect
+        const learningStrings = [
+            "New technologies",
+            "Faster workflows",
+            "Clean code",
+            "Best practices"
+        ];
+        let learningStrIndex = 0;
+        let learningCharIndex = 0;
+        let learningIsDeleting = false;
+
+        function typeLearning() {
+            const currentLearningString = learningStrings[learningStrIndex];
+            
+            if (learningIsDeleting) {
+                learningText.textContent = currentLearningString.substring(0, learningCharIndex - 1);
+                learningCharIndex--;
+            } else {
+                learningText.textContent = currentLearningString.substring(0, learningCharIndex + 1);
+                learningCharIndex++;
+            }
+
+            if (!learningIsDeleting && learningCharIndex === currentLearningString.length) {
+                setTimeout(() => learningIsDeleting = true, 1500);
+            } else if (learningIsDeleting && learningCharIndex === 0) {
+                learningIsDeleting = false;
+                learningStrIndex = (learningStrIndex + 1) % learningStrings.length;
+                setTimeout(typeLearning, 500);
+                return;
+            }
+
+            setTimeout(typeLearning, learningIsDeleting ? 50 : 100);
+        }
+
+        // Start both effects
+        setTimeout(() => {
+            type();
+            typeLearning();
+        }, 1000);
+    </script>
+</body>
+</html>
